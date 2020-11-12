@@ -6,7 +6,7 @@ $VMfile="DRIVE_LOCATION\Azure-VMs.csv"
 ##Only Target Enabled Subscriptions
     $subs = Get-AzSubscription  | Where-Object -Property State -eq 'Enabled'
 
-
+#Test
 $vmobjs = @()
 
 foreach ($sub in $subs)
