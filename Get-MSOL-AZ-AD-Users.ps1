@@ -60,4 +60,4 @@ $Usrs += [PSCustomObject] @{
                                             Enabled = "FALSE";
                                         }}
 ##Export Array to XLSX Excel File ##Replace [LOCATION] With Target Folder For Export File Location                                     
-$Usrs | Sort-Object -Property DisplayName | Export-Excel C:\[LOCATION]\MSOUsersList-$(Get-Date -UFormat "%Y-%m-%d_%H-%M-%S").xlsx
+$Usrs | Sort-Object -Property DisplayName | Export-Csv C:\[LOCATION]\MSOUsersList-$(Get-Date -UFormat "%Y-%m-%d_%H-%M-%S").csv -NoTypeInformation
